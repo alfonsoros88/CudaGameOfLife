@@ -5,7 +5,7 @@ project(TheGameOfLife)
 find_package(CUDA REQUIRED)
 find_package(OpenCV REQUIRED)
 
-set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-O3 -gencode arch=compute_13,code=sm_13)
+set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-O3 -gencode=arch=compute_30,code=sm_30)
 
 file(GLOB SOURCE "src/*.cu" "src/*.cpp")
 
