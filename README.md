@@ -21,3 +21,6 @@ cmake ..
 make
 ./gol
 ```
+
+Note that it is very important to specify the CUDA capability of your device in
+the **CUDA_NVCC_FLAGS** variable inside the CMakeLists.txt file.
